@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Roboto&display=swap');
 
-* {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
 body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     background-color: #000;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .first {
@@ -20,20 +18,25 @@ body {
 }
 
 .planet-section {
-    width: 100%;
+    width: 90%;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.planet-section div {
+.text {
     grid-column: span 2;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-img {
-    width: 33vw;
+.img-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container img {
+    width: 20vw;
 }
 
